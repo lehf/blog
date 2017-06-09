@@ -3,6 +3,7 @@ class Admin::SessionsController < ApplicationController
   end
 
   def create
+
   end
 
   def destroy
