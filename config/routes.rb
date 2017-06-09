@@ -17,12 +17,13 @@ Rails.application.routes.draw do
 
   get 'sessions/destroy'
 
-  namespace :admin do
-  get 'users/index'
-  resource :users
   get :login, to:'admin/session#new'
   post :login, to:'session#create'
   get :logout, to:'session#destroy'
+
+  namespace :admin do
+  get 'users/index'
+  resource :users
 
 
   end
