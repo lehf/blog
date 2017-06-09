@@ -20,8 +20,9 @@ Rails.application.routes.draw do
   namespace :admin do
   get 'users/index'
   resource :users
-    get :login, to:'session#new'
-    post :login, to:'session#create'
+  get :login, to:'admin/session#new'
+  post :login, to:'session#create'
+  get :logout, to:'session#destroy'
 
 
   end
