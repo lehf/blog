@@ -1,5 +1,6 @@
 <div>
   <h1>后台登录</h1>
+  
 
     <%= form_tag login_path  do |f| %>
       <div class="form-group">
@@ -8,9 +9,9 @@
       <div class="form-group">
         <%= text_field_tag :password, params[:password], :placeholder=>"请输入密码", :class=>"form-cotrol"  %>
       </div>
-      <div class="">
-        <%= submit_tag '登录' %>
-      </div>
+
+        <%= submit_tag '登录', :class=>"btn btn-success"%>
+
 
     <% end %>
 
