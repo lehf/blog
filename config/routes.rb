@@ -1,40 +1,30 @@
 Rails.application.routes.draw do
   namespace :admin do
-  get 'sessions/new'
+    resource :sessions,:only=>[:new,:create,:destroy]
   end
 
-  namespace :admin do
-  get 'sessions/create'
-  end
-
-  namespace :admin do
-  get 'sessions/destroy'
-  end
-
-  get 'sessions/new'
-
-  get 'sessions/create'
-
-  get 'sessions/destroy'
-
-  get :login, to:'admin/session#new'
-  post :login, to:'session#create'
-  get :logout, to:'session#destroy'
-
-  namespace :admin do
-  get 'users/index'
-  resource :users
 
 
-  end
 
-  get 'admin/users'
 
-  get 'admin/index'
 
-  get 'admin/users'
 
-  get 'admin/index'
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
