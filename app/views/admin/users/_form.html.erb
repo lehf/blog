@@ -2,15 +2,13 @@
 <div class="row">
   <div class="col-md-12 col-lg-12">
     <%= simple_form_for [:admin,@user] do |f|%>
-        <%= f.input :title, :label => "Title" %>
-        <%= f.input :subtitle, :label => "subTitle" %>
-        <%= f.input :image, :label => "Thumb" %>
-        <%= f.input :content, :label => "Content", :hint=>"当渲染类型选择content时必须填写", :input_html => {:height =>500, :class=>"MyEditor"} %>
-        <%= f.input :seo_title, :label => "SEOTitle" %>
-        <%= f.input :seo_keywords, :label => "seokeywords" %>
-        <%= f.input :seo_description, :label => "seodescription" %>
+        <%= f.input :name, :label => "Name" %>
+        <%= f.input :email, :label => "Email" %>
+
+        <%= f.input :password, :label => "Password" %>
+
         <%= f.submit "Submit", :class => "btn btn-success" %>
-        <%= link_to "cancel", admin_articles_path, :class => "btn btn-link" %>
+        <%= link_to "cancel", admin_users_path, :class => "btn btn-link" %>
     <% end %>
   </div>
 </div>

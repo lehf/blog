@@ -15,12 +15,27 @@ class Admin::UsersController < Admin::BaseController
       render :new
     end
   end
+  def edit
+    @user = User.find(params[:id])
+  end
 
   def update
-
+    @user = User.find(params[:id])
+    params.delete(:password) if params[:password].blank?
+    if @user.update(user_params)
+      redirect_to admin_users_path
+    else
+      render :edit
+    end
   end
 
   def destroy
+    @user = User.find(params[:id])
+    if @user.destroy
+      redirect_to admin_users_path
+    else
+      redirect_to admin_users_path
+    end
 
   end
   private
