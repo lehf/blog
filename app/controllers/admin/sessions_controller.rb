@@ -4,10 +4,29 @@ class Admin::SessionsController < ApplicationController
   end
 
   def create
-    redirect_to new_admin_sessions_path
+    user = User.find_by(email:params[:email]).try(:authenticate,params[:password])
+    if user
+      session[:admin_id] = user.id
+      redirect_to admin_dashboard_path
+    else
+
+      redirect_to new_admin_sessions_path, :alert=>"sad"
+    end
+
   end
 
   def destroy
+    session[:admin_id] = nil
+    redirect_to new_admin_sessions_path
 
   end
+  def dashboard
+
+  end
+  private
+  def user_params
+    params.require(:session).permit(:email, :password)
+  end
+
+
 end
