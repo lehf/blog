@@ -31,6 +31,9 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 gem "kaminari"
 # bootstrap
 gem 'bootstrap-sass', '~> 3.3.6'
+
+# 表单
+gem 'simple_form', '~> 3.2.0'
 # Use Unicorn as the app server
 # gem 'unicorn'
 
