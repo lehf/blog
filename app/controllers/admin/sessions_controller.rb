@@ -10,7 +10,7 @@ class Admin::SessionsController < ApplicationController
       redirect_to admin_dashboard_path
     else
 
-      redirect_to new_admin_sessions_path, :alert=>"sad"
+      redirect_to new_admin_sessions_path, :alert=>"check email adn password"
     end
 
   end
