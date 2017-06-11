@@ -1,6 +1,9 @@
 Rails.application.routes.draw do
   namespace :admin do
     resource :sessions,:only=>[:new,:create,:destroy]
+    resource :users
+    get "dashboard"=>"sessions#dashboard",:as=>:dashboard
+
   end
 
 
