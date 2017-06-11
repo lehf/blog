@@ -1,0 +1,37 @@
+<div class="row">
+  <div class="col-lg-12">
+    <h3 class="page-header">Articles List
+      <%= link_to "Add article", new_admin_article_path, :class => "btn btn-default pull-right" %>
+    </h3>
+  </div>
+</div>
+<div class="row">
+  <div class="col-lg-12">
+    <table class="table table-hover">
+      <thead>
+      <tr>
+        <th>ID</th>
+        <th>Title</th>
+
+        <th>InputTime</th>
+        <th>Act</th>
+
+      </tr>
+      </thead>
+      <tbody>
+        <% @articles.each do |article| %>
+        <tr>
+          <td><%= article.id %></td>
+          <td><%= link_to  article.title, admin_article_path(article)  %></td>
+
+          <td><%= article.created_at %></td>
+          <td><%= link_to "Edit",edit_admin_article_path(article) %></td>
+          <td><%= link_to "Delete",admin_article_path(article),
+                  :method=>:delete, :data=>{:confirm => "Sure?"}
+          %></td>
+        </tr>
+        <% end %>
+      </tbody>
+    </table>
+  </div>
+</div>

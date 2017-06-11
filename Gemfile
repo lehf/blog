@@ -28,12 +28,21 @@ gem 'sdoc', '~> 0.4.0', group: :doc
  gem 'bcrypt', '~> 3.1.7'
 
 # 分页
-gem "kaminari"
+gem 'kaminari'
 # bootstrap
 gem 'bootstrap-sass', '~> 3.3.6'
 
 # 表单
 gem 'simple_form', '~> 3.2.0'
+
+# 字体图标
+gem 'font-awesome-rails', '~> 4.3.0.0'
+# 载入条
+gem 'nprogress-rails', '~> 0.1.6.7'
+# 编辑器
+gem 'rails_kindeditor', '~> 0.4.5'
+gem 'codemirror-rails', '~> 5.3'
+
 # Use Unicorn as the app server
 # gem 'unicorn'
 

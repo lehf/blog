@@ -4,24 +4,20 @@ Rails.application.routes.draw do
   end
 
   namespace :admin do
-  get 'articles/new'
+
   end
 
   namespace :admin do
-  get 'articles/edit'
+
   end
 
-  get 'articles/index'
 
-  get 'articles/new'
-
-  get 'articles/edit'
 
   namespace :admin do
-    resource :sessions,:only=>[:new,:create,:destroy]
-    resource :users
+    resources :sessions,:only=>[:new,:create,:destroy]
+    resources :users
     get "dashboard"=>"sessions#dashboard",:as=>:dashboard
-    resource :articles
+    resources :articles
 
 
   end
