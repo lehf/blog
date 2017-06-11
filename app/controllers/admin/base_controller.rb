@@ -3,6 +3,7 @@ class Admin::BaseController < ApplicationController
 
   def current_admin
     session[:id] ? User.find(session[:admin_id]) : nil
+
   end
 
   private
