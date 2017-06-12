@@ -22,4 +22,10 @@
 // Include Language if needed
 //= require languages/zh_cn.js
 
+//= require  head/idangerous.swiper.min.js
+//= require head/jquery.min.js
+//= require head/public.js
+//= require head/fonts/iconfont.js
+//= require_tree ./application
+
 
