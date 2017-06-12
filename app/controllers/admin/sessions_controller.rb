@@ -1,4 +1,5 @@
 class Admin::SessionsController < Admin::BaseController
+  skip_before_action :admin_authenticate,:except => :dashboard
   def new
 
   end

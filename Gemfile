@@ -40,8 +40,8 @@ gem 'font-awesome-rails', '~> 4.3.0.0'
 # 载入条
 gem 'nprogress-rails', '~> 0.1.6.7'
 # 编辑器
-gem 'rails_kindeditor', '~> 0.4.5'
-gem 'codemirror-rails', '~> 5.3'
+gem 'rails_kindeditor', '~> 0.5.0'
+gem 'wysiwyg-rails', '~> 2.5', '>= 2.5.1'
 
 # Use Unicorn as the app server
 # gem 'unicorn'
