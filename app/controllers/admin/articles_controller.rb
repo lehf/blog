@@ -1,6 +1,6 @@
 class Admin::ArticlesController < Admin::BaseController
   def index
-    @articles = Article.all
+    @articles = Article.all.page(params[:page]).per(2)
   end
 
   def new
