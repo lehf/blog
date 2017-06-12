@@ -1,0 +1,32 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require admin_bootstrap
+ *= require admin_froala
+ *= require font-awesome
+ *= require codemirror
+ *= require components/sb-admin-2
+ *= require components/froala/froala_editor.min
+ *= require components/froala/froala_style.min
+ *= require components/froala/plugins/char_counter.min
+ *= require components/froala/plugins/code_view.min
+ *= require components/froala/plugins/colors.min
+ *= require components/froala/plugins/emoticons.min
+ *= require components/froala/plugins/file.min
+ *= require components/froala/plugins/fullscreen.min
+ *= require components/froala/plugins/image_manager.min
+ *= require components/froala/plugins/image.min
+ *= require components/froala/plugins/line_breaker.min
+ *= require components/froala/plugins/table.min
+ *= require components/froala/plugins/video.min
+ *= require_tree ./admin
+ */

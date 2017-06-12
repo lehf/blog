@@ -1,6 +1,7 @@
 class Admin::BaseController < ApplicationController
-  before_action :admin_authenticate
 
+  before_action :admin_authenticate
+  layout "admin"
   def current_admin
     session[:id] ? User.find(session[:admin_id]) : nil
 

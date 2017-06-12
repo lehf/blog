@@ -35,14 +35,24 @@ gem 'bootstrap-sass', '~> 3.3.6'
 # 表单
 gem 'simple_form', '~> 3.2.0'
 
+# 分析图表
+gem 'chartkick', '~> 1.4', '>= 1.4.1'
+gem 'chart', '~> 0.1.4.9'
 # 字体图标
 gem 'font-awesome-rails', '~> 4.3.0.0'
 # 载入条
 gem 'nprogress-rails', '~> 0.1.6.7'
 # 编辑器
 gem 'rails_kindeditor', '~> 0.5.0'
+
+
 gem 'wysiwyg-rails', '~> 2.5', '>= 2.5.1'
 
+# 代码编译器
+gem 'codemirror-rails', '~> 5.16'
+
+# 嵌套表单
+gem 'cocoon', '~> 1.2', '>= 1.2.9'
 # Use Unicorn as the app server
 # gem 'unicorn'
 
