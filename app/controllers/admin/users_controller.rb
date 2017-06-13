@@ -23,7 +23,9 @@ class Admin::UsersController < Admin::BaseController
     @user = User.find(params[:id])
     params.delete(:password) if params[:password].blank?
     if @user.update(user_params)
+      session[:admin_id] = nil
       redirect_to admin_users_path
+
     else
       render :edit
     end

@@ -18,6 +18,7 @@
 //= require bootstrap-sprockets
 //
 //= require froala_editor.min.js
+$('selector').froalaEditor();
 //
 // Include Language if needed
 //= require languages/zh_cn.js

@@ -1,7 +1,7 @@
 class Admin::SessionsController < Admin::BaseController
   skip_before_action :admin_authenticate,:except => :dashboard
   def new
-
+    render layout: nil
   end
 
   def create
@@ -11,14 +11,14 @@ class Admin::SessionsController < Admin::BaseController
       redirect_to admin_dashboard_path
     else
 
-      redirect_to new_admin_session_path, :alert=>"check email adn password"
+      redirect_to new_admin_session_path, :alert=>"Email或密码不正确"
     end
 
   end
 
   def destroy
     session[:admin_id] = nil
-    redirect_to new_admin_sessions_path
+    redirect_to new_admin_session_path
 
   end
   def dashboard

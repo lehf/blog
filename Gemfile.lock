@@ -189,6 +189,7 @@ DEPENDENCIES
   bcrypt (~> 3.1.7)
   bootstrap-sass (~> 3.3.6)
   byebug
+  carrierwave (~> 1.0)
   chart (~> 0.1.4.9)
   chartkick (~> 1.4, >= 1.4.1)
   cocoon (~> 1.2, >= 1.2.9)
@@ -198,6 +199,7 @@ DEPENDENCIES
   jbuilder (~> 2.0)
   jquery-rails
   kaminari
+  mini_magick (~> 4.3, >= 4.3.6)
   mysql2
   nprogress-rails (~> 0.1.6.7)
   rails (= 4.2.4)

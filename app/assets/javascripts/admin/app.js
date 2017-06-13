@@ -41,7 +41,7 @@
         // 展开菜单处理一下
         // $('#side-menu').metisMenu();
 
-        if($(".MyEditor").length >0 ){
+
             $(".MyEditor").froalaEditor({
                 language:"zh_cn",
                 imageManagerDeleteURL:"/admin/image_delete",
@@ -55,7 +55,7 @@
                     authenticity_token:CSRF_token
                 }
             })
-        }
+
         if($("#template_content").length>0) {
             var editor = CodeMirror.fromTextArea(document.getElementById("template_content"), {
                 mode: "application/x-erb",

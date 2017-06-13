@@ -47,7 +47,9 @@ gem 'rails_kindeditor', '~> 0.5.0'
 
 
 gem 'wysiwyg-rails', '~> 2.5', '>= 2.5.1'
-
+# 上传
+gem 'carrierwave', '~> 1.0'
+gem 'mini_magick', '~> 4.3', '>= 4.3.6'
 # 代码编译器
 gem 'codemirror-rails', '~> 5.16'
 
