@@ -11,6 +11,10 @@
   <%= csrf_meta_tags %>
 </head>
 
-
-<%= render "admin/navbar" %>
-<%= yield %>
+<body class="<%="#{controller_name}-#{action_name}"%>" id="<%="#{controller_name}-#{action_name}"%>" data-controller="<%=controller_name.humanize%>" data-action="<%=action_name.humanize%>">
+  <%= render "admin/navbar" %>
+  <div class="container">
+    <%=render "admin/flash"%>
+    <%= yield %>
+  </div>
+</body>

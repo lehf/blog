@@ -1,0 +1,164 @@
+body,div,h1,h2,h3,h4,h5,h6,p,ul,ol,dl,form,input,textarea {margin: 0;padding: 0;font-weight:normal;font-family: '微软雅黑',"Microsoft YaHei","Helvetica Neue", Helvetica, Arial, "Microsoft Yahei UI", SimHei, simsun, sans-serif;font-size:14px;color:#222}
+
+body{outline:none;overflow-x: hidden;}
+
+ul,ol {list-style: none;}
+
+a {text-decoration: none;}
+
+a:hover{text-decoration:none;}
+
+i{font-style: normal;}
+
+img ,a img{border:none;vertical-align: top;}
+
+.none {display: none;}
+
+.clear{clear:both}
+
+.fl{float:left}
+
+.fr{float:right}
+
+.tc{text-align:center}
+
+.tr{text-align:right}
+
+.wrap{width:1080px;margin: 0 auto;}
+
+.pr{position: relative;}
+.ps{position: absolute;}
+
+.white{color:#fff}
+.ul_line li{float: left;position: relative;}
+h2.title {text-align: center;padding: 70px 0 40px;border-bottom: 2px solid #F4D724;}
+h2.title span{display: inline-block;width:180px;height:180px;background: #F4D724;border-radius: 50%;line-height: 180px;font-size: 36px;position: relative;}
+
+h3.title {border-bottom: 1px solid #b2b2b2;margin-bottom: 15px;}
+h3.title span{display:inline-block;background: #f4d724;padding:7px;font-size: 24px;}
+.spleft{position: relative;left:-1000px}
+.spright{position: relative;right:-1000px}
+.sptop{position: relative;top:-600px}
+.spbottom{position: relative;bottom:-600px}
+.list_tit{margin: 20px 0 30px;}
+.list_tit a{height: 40px;line-height: 40px;padding: 0 25px;display: inline-block;font-size: 18px;color:#222;transition: 600ms;cursor: pointer;}
+.list_tit a:hover,.list_tit a.active{background: #F4D724;}
+.bn_top{
+	margin-top: 20px;position: relative;
+}
+.bn_top img{
+	width:100%;
+}
+.bn_top p{
+	box-sizing: border-box;
+	padding:10px 20px;
+	width:320px;
+	height:100%;
+	position: absolute;
+	right:0;top:0;
+	z-index: 2;
+	background: rgba(0,0,0,.8);
+	color:#fff;
+	font-size: 18px;
+	line-height: 32px;
+	text-align: justify;
+}
+
+/*public部分CSS结束*/
+
+#fx{position: fixed;top:20%;z-index: 999;}
+#wx,#phone,.fx_news{position: absolute;right:0}
+#wx p{text-align: center;margin-top: 5px;}
+.fx_news{width:195px}
+#wx,#phone,#res_top{width:80px;height:80px;margin-bottom: 30px;border-radius: 10px;position: relative;overflow: hidden;}
+#wx div,#phone div{background: #F4D724;padding: 10px;position: absolute;right:110px;top:0;opacity: 0;transition: 400ms;}
+#phone div{width:240px;height:90px;box-sizing: border-box;padding: 9px 0 0 16px;}
+#phone p{font-size: 26px;text-shadow: 0 4px 1px rgba(0,0,0,.1);color:#fff}
+#wx div:after,#phone div:after{content: '';position: absolute;top:1px;right:-12px;width: 0;border-left:12px solid #F4D724 ;border-top:12px solid  transparent;border-bottom:12px solid  transparent;}
+#phone div:before{content: '';position: absolute;width:230px;height:82px;border: 2px solid #fff;box-sizing: border-box;top:4px;left:5px}
+#wx{background: url(../images/in_fx1.png) no-repeat center center;background-color: #c7c7c7;}
+#phone{background: url(../images/in_fx2.png) no-repeat center center;background-color: #c7c7c7;}
+#wx:hover,#phone:hover{background-color: #F4D724;overflow: inherit;}
+#wx:hover div,#phone:hover div{opacity: 1;}
+
+#header li a{margin: 0;}
+#header #logo{
+	margin: 0 45px;
+}
+#logo img{width:90px;height:90px;margin-top:-35px}
+.nav {padding-top: 55px;}
+.nav ul{margin: 0 auto;}
+.nav a{color:#333;width:90px;height:20px;line-height: 20px;margin: 0;font-size: 20px;vertical-align: top;display: inline-block;padding: 10px 0;text-align: center;transition: 400ms;}
+.nav li{overflow: hidden;}
+.nav li.navlogo,.nav li:hover{overflow: initial;}
+.nav li:hover>a,.nav li.active>a,.nav li .navBox a:hover{background: #F4D724;}
+.nav li:hover .navBox{opacity: 1;}
+.nav li img{position: relative;margin-top:-50px; }
+#logo{margin: 0 71px;}
+#header{height:150px}
+#banner{height:407px;position: relative;}
+#banner img{position: absolute;left:50%;margin-left:-960px;top:0}
+
+
+
+#footer{height:320px;background: #F4D724;padding-top: 110px;}
+#footer .wrap{position: relative;}
+#footer .left{width:140px;position: absolute;padding-left: 20px;left:0;top:0}
+#footer .left li{margin-bottom: 5px;}
+#footer .left a{color:#222}
+#footer .left:after,#footer .left:before{content:'';width:1px;height:200px;background: #fff;opacity: .5;position: absolute;top:0;right:-3px;}
+#footer .left:before{background: #c3ab19;right:0}
+#footer .right{width:365px;position: absolute;padding-left: 50px;right:-95px;top:0}
+#footer .right p{line-height: 22px;}
+#footer h4{font-size: 20px;font-weight: bold;margin-bottom: 25px;}
+#footer .right:after,#footer .right:before{content:'';width:1px;height:200px;background: #fff;opacity: .5;position: absolute;top:0;left:-3px;}
+#footer .right:before{background: #c3ab19;left:0}
+#footer .center{text-align: center;margin-right: 160px;}
+#footer .center img{margin-bottom: 30px;}
+.ft1,.ft2,.ft3,.ft4,.ft5,.ft6,.ft7{display: inline-block;background: url(../images/ft_href.png) no-repeat !important;margin: 0 9px!important;padding: 0!important;}
+.ft1{width:16px !important;height:17px !important;}
+.ft2{width:15px !important;height:17px !important;background-position:0 -17px !important;}
+.ft3{width:17px !important;height:17px !important;background-position:0 -34px !important;}
+.ft4{width:20px !important;height:16px !important;background-position:0 -51px !important;}
+.ft5{width:14px !important;height:15px !important;background-position:0 -67px !important;}
+.ft6{width:18px !important;height:14px !important;background-position:0 -98px !important;}
+.ft7{width:16px !important;height:16px !important;background-position:0 -82px !important;}
+@media  (min-width: 1300px)  {
+	#footer .left{left:0;width:220px}
+	#footer .right{right:-175px}
+	#footer .center{margin-right: 0;}
+}
+
+@media  (min-width: 1500px)  {
+	#footer .left{left:-90}
+	#footer .right{right:-265px}
+}
+
+@media only screen and (min-width:1500px ){
+	#fx{right:100px}
+}
+.bdshare-button-style0-16 a, .bdshare-button-style0-16 .bds_more{
+	float:none !important;
+}
+
+#res_top{
+	background: #c7c7c7;
+	text-align: center;
+	line-height: 80px;
+}
+#res_top .iconfont{font-size: 70px;color:#fff;cursor: pointer;}
+#res_top:hover {background: #F4D724;}
+
+
+.navBox{
+	transition: 600ms;
+	position: absolute;
+	left:0;top:40px;
+	opacity: 0;
+	z-index: 99;
+}
+.nav .navBox a{
+	font-size: 15px;
+}
+.nav .navBox a{background: none;}
+#in_header .nav .navBox a:hover{background: rgba(255,255,255,.7);}

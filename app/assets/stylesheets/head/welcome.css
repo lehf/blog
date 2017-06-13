@@ -1,0 +1,274 @@
+@font-face {
+	font-family:'fzqk';
+	src: url('fonts/fangzheng.TTF');
+}
+h3.title span{font-family:fzqk;}
+
+#header{background: #fff;width: 100%;}
+#header.fxd{position: fixed;top:0;z-index: 999;background: rgba(255,255,255,.8);}
+#header_box{height:150px;display: none;}
+#in_header {overflow: hidden;width:100%;position: relative;min-height: 600px;}
+#in_header .wrap{position: relative;height: 100%;}
+#bn{position: absolute;top:0;left:0;z-index: -1;width:100%;height:100%;}
+#bn img{position: absolute;top:0;left:50%;margin-left:-960px;}
+#in_header .nav{animation:show 2s linear forwards;}
+#in_header button{width:98px;height:98px;border: 2px solid #5a5649;position: absolute;background: none;border-radius: 50%;outline: none;cursor: pointer;margin: 0 auto;display: block;left:0;right:0;bottom:-100px;}
+
+#in_header button:after{
+	content: '';
+	position: absolute;
+	left:0;right:0;top:38px;
+	margin: auto;
+	width:0;
+	border-top:24px solid #5a5649;
+	border-left:14px solid transparent;
+	border-right:14px solid transparent;
+}
+#in_header button:hover{animation:btn .6s linear  infinite;}
+#in_header #logo{width:150px;height:150px;margin: 0 41px;}
+#in_header #logo img{width:150px;height: 150px;margin-top: -50px;}
+#in_header p{
+	position: absolute;
+	top:70%;
+	font-size: 24px;
+	background: #797250;
+	color:#fff;
+	width:260px;
+	height:40px;
+	left:0;right:0;
+	margin:auto;
+	text-align: center;
+	border-radius: 17px;
+	line-height: 40px;
+	letter-spacing: 10px;
+	opacity: 0;
+	animation:swp 1s linear 1.2s forwards;
+	opacity: 1\0;
+}
+#in_header li a{width:84px}
+#in_header li:hover a{background: none;}
+#header #logo{
+	margin: 0 45px;
+}
+#logo img{width:90px;height:90px;margin-top:-35px}
+
+
+/*顶部第一屏header部分CSS结束*/
+
+
+#banner{height:550px;}
+#banner>.ps{width:1400px;margin: -54px auto 0;left:0;right:0;top:50%;min-width: 1200px;}
+
+/*banner图的CSS结束*/
+
+/*main主题部分的CSS开始*/
+
+#main .wrap{overflow: hidden;}
+.grade {padding: 40px 0 25px;background: #fff;border-bottom: 2px solid #cecdc8;}
+.grade .fl{width:410px}
+.grade .fr{width:630px;margin: 0 15px;}
+.grade p{line-height: 28px;font-size: 16px;}
+.grade ul{padding-top:10px;border-top:1px solid #d2d2d2;margin-top: 15px;width:370px}
+.grade li{line-height: 28px;}
+.grade .fl a{width:300px;display: inline-block;margin-right: 15px;color:#333;overflow: hidden;text-overflow: ellipsis;white-space: nowrap;vertical-align: top;}
+.grade li span{vertical-align: top;}
+.grade p.more a{width:370px;text-align: center;font-weight: 600;margin-top: 7px;}
+
+/*更高成绩CSS结束*/
+
+.news{padding: 15px 0;}
+.news>.fl{width:800px;}
+.news>.fl ul{width:830px;height:250px}
+.news>.fl li{width:250px;height:200px;margin-right: 25px;}
+.news>.fl li img{width:250px;height:200px;transition: 600ms;}
+.news>.fl li:hover img{transform: scale(1.1);}
+.news>.fl li p{overflow: hidden;}
+.news>.fl li p:first-child{margin-bottom: 3px;}
+.news>.fl li .time{color:#9a9796}
+.news>.fr{width:250px}
+.news>.fr li{margin-top: 27px;}
+.news>.fr img{width:80px;height:80px;margin-right: 6px;}
+.news>.fr p{margin-top: 6px;}
+.news>.fr p:last-child{color:#9A9796}
+
+/*最高咨询CSS结束*/
+.pro{background: #fff;height:500px;padding-top: 30px;box-sizing: border-box;}
+.pro h3{margin-bottom: 5px;}
+.pro h4.more{text-align: right;width:510px}
+.pro h4.more a{color:#333}
+.pro .fl li{margin:7px 0 0 10px;position: relative;transition: 370ms;}
+.pro .fl li:hover{margin-top:3px}
+.pro .fl img{width:120px;height:370px}
+.pro .fl li:first-child{margin-left: 0;}
+.pro .fl li p{margin-top: 5px;}
+.pro .fr{width:540px;padding-top: 100px;}
+.pro .fr li{width:250px;height:140px;box-sizing: border-box;background: #ccc;position: relative;margin: 0 20px 20px 0;}
+.pro .fr li h4{transition: 600ms;line-height: 140px;text-align: center;font-size: 30px;}
+.pro .fr li h4:hover{transform: rotateY(180deg)}
+.pro .fr .box{width:100%;height:100%;position: absolute;top:0;left:0;opacity: 0;overflow: hidden;transition:transform 800ms;transform: rotateY(180deg);z-index: 2;}
+.pro .fr li:hover .box{opacity: 1;transform: rotateY(0)}
+.pro .fr .box h5{position: relative;margin-top:-200px;transition: 800ms;text-align: center;font-size: 30px;line-height: 30px;}
+.pro .fr .box p{position: relative;margin-top:300px;transition: 800ms;text-align: center;font-size: 20px;}
+.pro .fr .bg{width:100%;height:100%;position: absolute;top:0;left:0;opacity: 0;background:#f4d724;z-index: 1;}
+.pro .fr li:hover .bg{opacity: 1;}
+.pro .fr li:hover h5{margin-top:30px}
+.pro .fr li:hover p{margin-top:20px}
+.pro .fr i{width:31px;height:28px;display: inline-block;background: url(../images/pro.png) no-repeat;position: relative;vertical-align: top;margin-right: 7px;}
+.pro .fr .dangan{top:4px}
+.pro .fr .stu{width:36px;height:27px;background-position:0 -28px;top:3px}
+.pro .fr .zhaos{width:36px;height:27px;background-position:0 -90px ;top:5px}
+.pro .fr .cts{width:28px;height:35px;background-position:0 -55px ;}
+
+
+/*作品赏析的CSS结束*/
+.teacher {margin-top: 45px;}
+.teacher  ul{width:1100px}
+.teacher li{position: relative;margin:20px 20px 0 0;overflow: hidden;width: 200px;height: 240px;}
+.teacher  img{width:200px;height: 240px;}
+.teacher .box{width:200px;height:60px;background: rgba(244,215,36,.3);position: absolute;left:0;bottom:-24px;transition: 600ms;}
+.teacher .box p{font-size: 16px;text-align: center;}
+.teacher .box p:first-child{margin: 7px 0 2px;font-size: 18px;}
+.teacher li:hover .box{bottom:0}
+.teacher li:hover p{color:#fff}
+
+/*完美师资结束*/
+
+.video .box{width:400px;height:280px;overflow: hidden;margin-top: 12px;}
+.video .fl{width:410px;height:310px;background: #fff;}
+.video .fr{background: #fff;height:300px;padding-top: 10px;}
+.video li{width:100px;height:290px;margin-left: 10px;background: #f4d724;position: relative;overflow: hidden;box-sizing: border-box;border: 1px solid #F4D724;}
+.video li:hover{border: 1px solid #cac9c6;}
+.video .bg{position: absolute;width:100%;height:100%;background: #fff;top:-100%;transition:  800ms ;opacity: 0;}
+.video li:hover .bg{top: 0;opacity: 1;}
+.video li p{position: relative;z-index: 2;width: 25px;font-family: fzqk;font-size: 24px;margin: 0 auto;color:#000}
+.video li i{display: block;background: url(../images/in_video.png) no-repeat;margin:30px auto 39px;z-index: 2;position: relative;}
+.video li em,.video li em:after{border-radius: 50%;display:block;border: 1px solid #333;z-index: 2;margin: auto;}
+.video li em{width:16px;height:16px;position: relative;margin-bottom: 35px;}
+.video li em:after{content:'';width:10px;height:10px;position: absolute;top:0;bottom:0;left:0;right:0;}
+.video .v1{width:24px;height:34px;margin-bottom: 33px;}
+.video .v2{width:24px;height:28px;background-position:0 -34px;} 
+.video .v3{width:29px;height:23px;background-position:0 -62px ;margin-bottom:44px;} 
+.video .v4{width:29px;height:23px;background-position:0 -85px ;margin-bottom:44px;} 
+.video .v5{width:30px;height:27px;background-position:0 -108px ;margin-bottom:40px;} 
+.video .v6{width:27px;height:28px;background-position:0 -135px;} 
+
+/*视频中心的CSS结束*/
+
+.barcode {padding: 35px 0;background: #fff;margin-top: 30px;overflow: hidden;height: 400px;box-sizing: border-box;}
+.barcode h4{font-size: 30px;text-align: center;margin-bottom: 60px;font-family: fzqk;letter-spacing: 8px;color:#000;position: relative;}
+.barcode ul{position: relative;}
+.barcode li{margin-left: 111px;}
+.barcode li p{text-align: center;font-size: 13px;font-weight: bold;margin-bottom: 15px;}
+
+/*二维码部分CSS结束*/
+
+/*main主题部分所有CSS结束*/
+
+
+/*以下是swiper的轮播配置CSS*/
+.swiper-container{width:100%;height:550px;overflow: hidden;}
+.swiper-slide{position: relative;height: 100%;overflow: hidden;}
+.swiper-product-prev,.swiper-product-next{
+	position: absolute;
+	width:65px;
+	height:109px;
+	background: url(/images/index_btn.png) no-repeat;
+	z-index: 2;
+	cursor: pointer;
+	opacity:0;
+	transition: 600ms;
+}
+#banner:hover .swiper-product-prev,#banner:hover .swiper-product-next{
+	opacity: 1;
+}
+.swiper-product-next{
+	background-position:0 -109px ;
+	right:.0;
+}
+.swiper-container2,.swiper-container2 img{width:630px;height:340px;overflow: hidden;position: relative;}
+.swiper-slide{position: relative;height: 100%;overflow: hidden;}
+.swiper-product-prev,.swiper-product-next,.swiper-product-prev2,.swiper-product-next2{
+	position: absolute;
+	width:65px;
+	height:109px;
+	background: url(/images/index_btn.png) no-repeat;
+	z-index: 2;
+	cursor: pointer;
+}
+.swiper-product-next{
+	background-position:0 -109px ;
+	right:.0;
+}
+.swiper-product-prev2{
+	width:30px;height:53px;background-position:0 -221px;top:50%;left:-50px;transition: 600ms;
+}
+.swiper-product-next2{
+	width:30px;height:53px;background-position:0 -274px;top:50%;left:auto;right:-50px;transition: 600ms;
+}
+.swiper-container2:hover .swiper-product-prev2{
+	left:13px;
+}
+.swiper-container2:hover .swiper-product-next2{
+	right:13px;
+}
+.swiper-container2 .slide-text{
+	position: absolute;
+	top:0;margin: auto;left:0;right:0;
+	transform: translateY(-50%);
+	opacity: 0;
+	transition: 600ms;
+}
+.swiper-container2 .swiper-slide:hover .slide-text{
+	opacity: 1;
+	top:50%;
+	top:70px\0;
+}
+.swiper-container2 p{color:#f4d724;width:360px;margin: 0 auto;text-align: justify;}
+.swiper-container2 .school{font-size: 48px;line-height: 48px;text-align: center;margin-bottom: 25px;}
+.swiper-container2 .honor{font-size: 36px;line-height: 36px;text-align: center;width:auto;margin-bottom: 20px;padding-bottom: 15px;position: relative;}
+.swiper-container2 .honor:after{content: '';position: absolute;width:360px;height:1px;background: #F4D724;bottom:0;left:50%;margin-left: -180px;}
+
+.swiper-container3{width:100%;height: 570px;position: relative;overflow: hidden;}
+.swiper-container3 .swiper-pagination-h{position: absolute;bottom:10px;text-align: center;width: 100%;}
+.swiper-pagination-h .swiper-pagination-switch{width:14px;height:14px;background: #cac9c6;border: 1px solid #b5b5b5;box-sizing: border-box;display: inline-block;border-radius: 50%;margin: 0 3px;}
+.swiper-pagination-h .swiper-active-switch{background: #f4d724;}
+/*swiper的轮播配置CSS结束*/
+
+
+/*动画的CSS*/
+@keyframes swp{
+	from{top:40%;opacity: 0;}
+	to{top:70%;opacity: 1;}
+}
+@keyframes swbtn{
+	from{bottom:-100px}
+	to{bottom:25px;}
+}
+
+
+@keyframes btn{
+	0%{bottom:25px}
+	50%{bottom:35px}
+	100%{bottom:25px}
+}
+@keyframes show{
+	from{opacity: 0;}
+	to{opacity: 1;}
+}
+@-webkit-keyframes show{
+	from{opacity: 0;}
+	to{opacity: 1;}
+}
+
+
+
+@media only screen and (max-width:1400px ) {
+	#banner>.ps{width:100%;}
+}
+
+
+.navBox{
+	background:#5a5649;
+}
+.navBox a{color:#fff}
+.nav li .navBox a:hover{color:#333}

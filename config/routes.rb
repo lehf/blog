@@ -21,6 +21,9 @@ Rails.application.routes.draw do
     get "dashboard"=>"sessions#dashboard",:as=>:dashboard
     resources :articles
 
+  #   文件上传
+    post :image_upload, to:"files#image_upload"
+
 
   end
 
