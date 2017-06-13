@@ -1,15 +1,10 @@
 Rails.application.routes.draw do
-  namespace :admin do
-  get 'articles/index'
-  get 'users/index'
-
-  end
 
   namespace :admin do
-
-  end
-
-  namespace :admin do
+    get 'articles/index'
+    get 'users/index'
+    get 'categories/index'
+    get 'article_categories/index'
 
   end
 
@@ -20,7 +15,7 @@ Rails.application.routes.draw do
     resources :users
     get "dashboard"=>"sessions#dashboard",:as=>:dashboard
     resources :articles
-
+    resources :article_categories
   #   文件上传
     post :image_upload, to:"files#image_upload"
 

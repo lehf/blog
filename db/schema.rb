@@ -11,7 +11,20 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170611065529) do
+ActiveRecord::Schema.define(version: 20170613100031) do
+
+  create_table "article_categories", force: :cascade do |t|
+    t.string   "name",            limit: 255
+    t.string   "image",           limit: 255
+    t.string   "seo_title",       limit: 255
+    t.string   "seo_keywords",    limit: 255
+    t.string   "seo_description", limit: 255
+    t.integer  "parent_id",       limit: 4
+    t.integer  "lft",             limit: 4
+    t.integer  "rgt",             limit: 4
+    t.datetime "created_at",                  null: false
+    t.datetime "updated_at",                  null: false
+  end
 
   create_table "articles", force: :cascade do |t|
     t.string   "lng",             limit: 255
@@ -33,7 +46,7 @@ ActiveRecord::Schema.define(version: 20170611065529) do
   create_table "users", force: :cascade do |t|
     t.string   "name",            limit: 255
     t.string   "email",           limit: 255
-    t.string   "password_disget", limit: 255
+    t.string   "password_digest", limit: 255
     t.boolean  "is_admin"
     t.datetime "created_at",                  null: false
     t.datetime "updated_at",                  null: false
