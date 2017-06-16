@@ -4,6 +4,7 @@ class Admin::FilesController < Admin::BaseController
     render :json=>"不是图片",:status => 500 and return unless check_image_filename(params[:file])
     file_name,file_path=upload_file(params[:file],"images")
     respond_to do |format|
+
       format.json {render :json=>{:link=>file_path}}
       format.html {render :text => file_path}
     end
